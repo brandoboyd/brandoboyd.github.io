@@ -3,7 +3,16 @@ body {
     font-family: 'Roboto', sans-serif;
     padding: 50px;
     text-align: center;
-    color: #333;  
+    color: #333;
+    margin: 0 auto; /* Center the content */
+    max-width: 800px; /* Set a comfortable maximum width */
+}
+
+/* Responsiveness */
+@media screen and (max-width: 900px) {
+    body {
+        padding: 20px;
+    }
 }
 
 a {
@@ -52,9 +61,10 @@ a:hover {
     text-align: left;
     line-height: 1.6;
     margin: 20px 0;
+    padding: 0 10px; /* Some side padding for better spacing on smaller screens */
 }
 
-.article-content h2, .article-content h3 {  /* Subheadings within the article */
+.article-content h2, .article-content h3 {
     font-weight: 700;
     margin-top: 20px;
 }
